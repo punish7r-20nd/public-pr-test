@@ -1,0 +1,10 @@
+name: gateway
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  meta:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Gateway workflow - PR from ${{ github.actor }}"
